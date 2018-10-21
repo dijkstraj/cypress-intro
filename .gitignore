@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+
+# Cypress examples
+example.json
+cypress/integration/examples/
