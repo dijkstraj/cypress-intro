@@ -63,3 +63,6 @@ typings/
 # Cypress examples
 example.json
 cypress/integration/examples/
+
+# Generated docs
+*.pdf
