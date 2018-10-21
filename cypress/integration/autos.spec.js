@@ -4,4 +4,10 @@ describe('Autos', () => {
       .its('body.length')
       .should('eq', 0);
   });
+
+  it('should add an auto', () => {
+    cy.request('POST', 'http://localhost:3000/autos', {merk: 'Cypress'})
+      .its('body')
+      .should('eq', 'Cypress toegevoegd met id 1');
+  });
 });
