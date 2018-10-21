@@ -16,6 +16,13 @@ exports.addAuto = function(request, response) {
     response.send(auto.merk + ' toegevoegd met id ' + id);
 };
 
+exports.deleteAllAutos = function(request, response) {
+    const ids = Object.keys(autos);
+    ids.forEach(id => delete autos[id]);
+    idGenerator = 1;
+    response.send(ids.length + " auto's verwijderd");
+};
+
 function withValidId(request, handler) {
     const id = parseInt(request.params.id, 10);
     if (id > 0 && autos[id]) {

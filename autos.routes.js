@@ -3,7 +3,8 @@ exports.setup = function(app) {
 
     app.route('/autos')
         .get(controller.getAutos)
-        .post(controller.addAuto);
+        .post(controller.addAuto)
+        .delete(controller.deleteAllAutos);
 
     app.route('/autos/:id')
         .get(controller.getAuto)

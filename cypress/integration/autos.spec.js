@@ -1,4 +1,8 @@
 describe('Autos', () => {
+  beforeEach(() => {
+    cy.request('DELETE', 'http://localhost:3000/autos');
+  });
+
   it('should return an empty list', () => {
     cy.request('http://localhost:3000/autos')
       .its('body.length')
