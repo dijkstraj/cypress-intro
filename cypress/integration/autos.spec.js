@@ -1,16 +1,16 @@
 describe('Autos', () => {
   beforeEach(() => {
-    cy.request('DELETE', 'http://localhost:3000/autos');
+    cy.request('DELETE', '/autos');
   });
 
   it('should return an empty list', () => {
-    cy.request('http://localhost:3000/autos')
+    cy.request('/autos')
       .its('body.length')
       .should('eq', 0);
   });
 
   it('should add an auto', () => {
-    cy.request('POST', 'http://localhost:3000/autos', {merk: 'Cypress'})
+    cy.request('POST', '/autos', {merk: 'Cypress'})
       .its('body')
       .should('eq', 'Cypress toegevoegd met id 1');
   });
