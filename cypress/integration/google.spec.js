@@ -1,4 +1,4 @@
-describe('Autos', () => {
+describe('Google', () => {
   beforeEach(() => {
     // Given I visit Google
     cy.visit('https://www.google.com');
@@ -11,7 +11,7 @@ describe('Autos', () => {
       .type('{enter}');
 
     // Then I get 42
-    cy.get('#cwos') // <-- output field of calculator
+    cy.get('#cwo') // <-- output field of calculator
       .should('have.text', '42');
   });
 });
