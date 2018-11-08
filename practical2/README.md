@@ -8,13 +8,13 @@ Pak de zip uit op schijf en open een commandline in de map cypress-intro-master 
 Installeer de benodigde afhankelijkheden met:
 
 ```bash
-npm install
+> npm install
 ```
 
 Start vervolgens de testrunner met:
 
 ```bash
-npm run test
+> npm run test
 ```
 
 ## Squerist
@@ -29,7 +29,7 @@ zodat het goed te volgen is.
 - **Navigeer** naar de website van Squerist
 - **Klik** op `Testen`
 - **Verifieer** dat de titel *Onze aanpak* bevat.
-- **Klik** op het linker menu `Doelgericht`(*hint: dit element heeft id 2*)
+- **Klik** op het linker menu `Doelgericht` (*hint: dit element heeft id 2*)
 - **Verifieer** dat de tekst *Volgens Squerist kunnen er met testen verschillende doelen behaald worden* aanwezig is op de pagina.
 - **Klik** op het linker menu `Flexibel`
 - **Verifieer** dat er nergens *squerist* geschreven wordt, dat moet tenslotte met een hoofdletter.
@@ -78,8 +78,8 @@ Je ziet ook al een drietal tests staan, maak deze af.
 > Gebruik hiervoor de volgende commando's:
 >
 > * [`type('stukje tekst')`](https://docs.cypress.io/api/commands/type.html) om een _stukje tekst_ te typen
-> * [`select('optie')`](https://docs.cypress.io/api/commands/type.html) om _optie_ te selecteren in een dropdown
-> * [`check('optie')`](https://docs.cypress.io/api/commands/type.html) om _optie_ aan te vinken
-> * [`click()`](https://docs.cypress.io/api/commands/type.html) om op een knop te klikken
+> * [`select('optie')`](https://docs.cypress.io/api/commands/select.html) om _optie_ te selecteren in een dropdown
+> * [`check('optie')`](https://docs.cypress.io/api/commands/check.html) om _optie_ aan te vinken
+> * [`click()`](https://docs.cypress.io/api/commands/click.html) om op een knop te klikken
 
 Vul tot slot de tests aan totdat alle velden die foutmeldingen kunnen opleveren getest zijn.
