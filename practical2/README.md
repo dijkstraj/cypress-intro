@@ -19,15 +19,32 @@ npm run test
 
 ## Squerist
 
-Ga verder met [squerist.spec.js]()
+Om in een bekende omgeving te wennen aan Cypress gaan we wat simpele tests doen op de website van Squerist.
+Er is een beginnetje gemaakt in [squerist.spec.js](https://github.com/dijkstraj/cypress-intro/blob/master/cypress/integration/squerist.spec.js),
+de eerste stap is er al.
+Binnen de `it` gaan we de test aanvullen,
+doe dit door telkens 1 handeling en 1 controle toe te voegen en niet alle stappen in 1x,
+zodat het goed te volgen is.
 
-- Navigeer naar de website van Squerist
-- klik op `Testen`
-- verify header `Onze aanpak`
-- klik op linker menu `Doelgericht`
-- verify stukje content
-- klik op linker menu `Flexibel`
-- verify stukje content
+- **Navigeer** naar de website van Squerist
+- **Klik** op `Testen`
+- **Verifieer** dat de titel *Onze aanpak* bevat.
+- **Klik** op het linker menu `Doelgericht`
+- **Verifieer** dat de tekst *Volgens Squerist kunnen er met testen verschillende doelen behaald worden* aanwezig is op de pagina.
+- **Klik** op het linker menu `Flexibel`
+- **Verifieer** dat er nergens *squerist* geschreven wordt, dat moet tenslotte met een hoofdletter.
+
+Mocht je er niet uitkomen een aantal tips:
+
+- Naar een pagina navigeren doen we met `cy.visit`. Zie de [documentatie](https://docs.cypress.io/api/commands/visit.html).
+- Een element op de pagina opvragen (zodat we er iets mee kunnen doen) doen we met `cy.get`. Zie de [documentatie](https://docs.cypress.io/api/commands/get.html).
+- Klikken op een element: `.click` Zie de [documentatie](https://docs.cypress.io/api/commands/click.html).
+- Eigenschappen van een element verifiëren kan met `.should`, zie de [documentatie](https://docs.cypress.io/api/commands/should.html) voor het gebruik. Should gebruikt *assertions*, kijk eens naar de [common assertions](https://docs.cypress.io/guides/references/assertions.html#Common-Assertions).
+- De [FAQ](https://docs.cypress.io/faq/questions/using-cypress-faq.html) van Cypress kan ook van pas komen als je op de bovenstaande pagina's niet vindt wat je zoekt.
+- Van de genoemde technieken zijn ook simpele voorbeelden te zien in [home.spec.js](https://github.com/dijkstraj/cypress-intro/blob/master/cypress/integration/home.spec.js).
+
+Bonus:
+Op de `Onze aanpak` pagina staan in de tekst ook linkjes naar de subpagina's. Maak een nieuwe test waarmee je test of die linkjes werken en naar dezelfde pagina leiden.
 
 ## Google
 
