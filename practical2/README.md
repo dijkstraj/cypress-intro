@@ -1,5 +1,14 @@
 # Cypress
 
+## Inleiding
+
+In dit document hebben we een aantal aanvullende opdrachten gezet om je verder bekend te laten worden met Cypress.
+Tijdens het spreekuur van maandag 12 november zijn we beschikbaar voor extra hulp hiermee.
+Op maandag 19 november zullen we er ook nog een keer gezamenlijk doorheen lopen.
+Tussendoor kun je natuurlijk ook altijd een mail sturen naar _jogchem@openvalue.nl_ en _pieter@openvalue.nl_.
+
+## Voorbereiding
+
 Begin met het downloaden van [het voorbeeldproject](https://github.com/dijkstraj/cypress-intro).
 
 ![Voorbeeldproject downloaden](download-base.png)
