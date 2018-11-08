@@ -29,17 +29,18 @@ zodat het goed te volgen is.
 - **Navigeer** naar de website van Squerist
 - **Klik** op `Testen`
 - **Verifieer** dat de titel *Onze aanpak* bevat.
-- **Klik** op het linker menu `Doelgericht`
+- **Klik** op het linker menu `Doelgericht`(*hint: dit element heeft id 2*)
 - **Verifieer** dat de tekst *Volgens Squerist kunnen er met testen verschillende doelen behaald worden* aanwezig is op de pagina.
 - **Klik** op het linker menu `Flexibel`
 - **Verifieer** dat er nergens *squerist* geschreven wordt, dat moet tenslotte met een hoofdletter.
 
 Mocht je er niet uitkomen een aantal tips:
 
-- Naar een pagina navigeren doen we met `cy.visit`. Zie de [documentatie](https://docs.cypress.io/api/commands/visit.html).
-- Een element op de pagina opvragen (zodat we er iets mee kunnen doen) doen we met `cy.get`. Zie de [documentatie](https://docs.cypress.io/api/commands/get.html).
-- Klikken op een element: `.click` Zie de [documentatie](https://docs.cypress.io/api/commands/click.html).
-- Eigenschappen van een element verifiëren kan met `.should`, zie de [documentatie](https://docs.cypress.io/api/commands/should.html) voor het gebruik. Should gebruikt *assertions*, kijk eens naar de [common assertions](https://docs.cypress.io/guides/references/assertions.html#Common-Assertions).
+- Naar een pagina navigeren doen we met `cy.visit`. Zie de [documentatie](https://docs.cypress.io/api/commands/visit.html#Syntax).
+- Een element op de pagina opvragen (zodat we er iets mee kunnen doen) doen we met `cy.get`. Zie de [documentatie](https://docs.cypress.io/api/commands/get.html#Syntax).
+- Soms is het lastig om de *selector* van een element te vinden. De [Selector Playground](https://docs.cypress.io/guides/core-concepts/test-runner.html#Selector-Playground) kan dan van pas komen. Deze tool levert vaak niet de mooiste (kortste) selectors op dus het advies is om dit niet als primaire aanpak te gebruiken.
+- Klikken op een element: `.click` Zie de [documentatie](https://docs.cypress.io/api/commands/click.html#Syntax).
+- Eigenschappen van een element verifiëren kan met `.should`, zie de [documentatie](https://docs.cypress.io/api/commands/should.html#Syntax) voor het gebruik. Should gebruikt *assertions*, kijk eens naar de [common assertions](https://docs.cypress.io/guides/references/assertions.html#Common-Assertions).
 - De [FAQ](https://docs.cypress.io/faq/questions/using-cypress-faq.html) van Cypress kan ook van pas komen als je op de bovenstaande pagina's niet vindt wat je zoekt.
 - Van de genoemde technieken zijn ook simpele voorbeelden te zien in [home.spec.js](https://github.com/dijkstraj/cypress-intro/blob/master/cypress/integration/home.spec.js).
 
