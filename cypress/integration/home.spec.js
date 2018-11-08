@@ -8,7 +8,7 @@ describe('Home', () => {
   });
 
   it('should have a section on Utilities', () => {
-    cy.get('h2').contains('Utilities');
+    cy.get('h2').contains('Utilities').should('exist');
   });
 
   it('should point to a page on Actions', () => {
