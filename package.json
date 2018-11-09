@@ -1,10 +1,9 @@
 {
-  "name": "cypress-intro",
+  "name": "cypress-continued",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "cypress open",
     "test": "cypress open"
   },
   "repository": {
@@ -18,11 +17,7 @@
   },
   "homepage": "https://github.com/dijkstraj/cypress-intro#readme",
   "devDependencies": {
-    "cypress": "^3.1.0",
-    "nodemon": "^1.18.4"
+    "cypress": "^3.1.0"
   },
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4"
-  }
+  "dependencies": {}
 }
