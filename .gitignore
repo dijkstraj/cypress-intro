@@ -66,3 +66,6 @@ cypress/integration/examples/
 
 # Generated docs
 *.pdf
+
+# Project files
+.idea/
